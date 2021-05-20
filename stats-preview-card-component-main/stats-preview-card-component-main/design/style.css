@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --FFInter: 'Inter', sans-serif;
+    --FFLexend: 'Lexend Deca', sans-serif;
+}
+
+body {
+    background-color: hsl(233, 47%, 7%);
+    padding: 9%;
+    display: grid;
+    place-items: center;
+    font-size: 15px;
+}
+
+.card {
+    width: 90%;
+    height: auto;
+    background-color: hsl(244, 38%, 16%);
+    display: flex;
+    flex-direction: row-reverse;
+    border-radius: 10px;
+}
+
+.text {
+    width: 50%; 
+    order: 1;
+    padding: 3%;
+}
+/* .text .container {} */
+
+.text header h1 {
+    font: 2.5em var(--FFLexend);
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+}
+
+.text header .tint {color: hsl(277, 64%, 61%);}
+
+.text main > * {
+    color: hsla(0, 0%, 100%, 0.75);
+    font: 15px var(--FFInter);
+    margin-top: 6%;
+    line-height: 25px;
+}
+
+.stats-container {
+    display: flex;
+    gap: 20%;
+    margin-top: 25%;
+}
+
+.stats-container h2 {
+    font: 2em var(--FFLexend);
+    color:hsl(0, 0%, 100%);
+    font-weight: 700;
+}
+
+.stats-container p {
+    color: hsla(0, 0%, 100%, 0.75);
+    font: 1em var(--FFInter);
+}
+
+.colorAdder {
+    background-color: hsl(277, 64%, 61%);
+    height: auto;
+    border-radius: 0 10px 10px 0;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+    border-radius: 0 10px 10px 0;
+    opacity: 0.5;
+}
+
+@media (max-width: 1370px) {
+    .card {flex-direction: column;}
+
+    .text {
+        order: 2;
+        text-align: center;
+        width: 100%;
+    }
+    .stats-container {
+        justify-content: space-between;
+    }
+    .colorAdder {border-radius: 10px 10px 0 0;}
+    img {border-radius: 10px 10px 0 0;}
+}
+
+@media (max-width: 740px) {
+    .img {
+        height: fit-content;
+        width: 100%;
+        background: url(../images/image-header-mobile.jpg) no-repeat;
+        background-size: contain;
+    }
+}
+
+@media (max-width: 600px) {
+    body {padding: 20% 10%;}
+    .text .container {margin: 7%;}
+
+    .stats-container {
+        margin-top: 20%;
+        flex-direction: column;
+        gap: 20px;
+    }
+}
