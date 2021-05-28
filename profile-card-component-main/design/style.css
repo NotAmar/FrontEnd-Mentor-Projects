@@ -1,0 +1,113 @@
+/*variables and pre-styling*/
+:root {
+    --BGDark-cyan: hsl(185, 75%, 39%);
+    --FFMain: 'Kumbh Sans', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*styling*/
+body {
+    background-color: var(--BGDark-cyan);
+    height: 100vh;
+    overflow: hidden;
+}
+
+.top {
+    position: absolute;
+    bottom: 50%;
+    right: 50%;
+    z-index: 1;
+}
+
+.bottom {
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    z-index: 2;
+}
+
+.container {
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    border-radius: 30px 30px 30px 30px;
+    display: grid;
+    grid-template-rows: 1fr 45% 20%;
+    width: 400px;
+    height: 450px;
+    z-index: 4;
+    box-shadow: 0 0 20px black;
+}
+
+.card .head {
+    background: url(../images/bg-pattern-card.svg) repeat;
+    border-radius: 30px 30px 0 0;
+}
+
+.card main {
+    background-color: white;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main img {
+    position: relative;
+    bottom: 20%;
+    border-radius: 50%;
+    border: 5px solid white;
+}
+
+h1 {
+    font: 18px var(--FFMain);
+    font-weight: 700;
+    color: rgb(58, 58, 58);
+}
+
+.card .gray {color: hsl(0, 0%, 59%);}
+
+main p {
+    font: 18px var(--FFMain);
+    margin-top: 20px;
+}
+
+.card footer {
+    background-color: white;
+    border-radius: 0 0 30px 30px;
+    border-top: 1px solid hsl(0, 0%, 59%);
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+    text-align: center;
+}
+
+footer p {
+    font: 14px var(--FFMain);
+    color: hsl(0, 0%, 59%);
+}
+
+@media (max-width: 430px) {
+    .card {
+        width: 300px;
+        height: 350px;
+    }
+
+    main p {
+        margin-top: 10px;
+    }
+}
