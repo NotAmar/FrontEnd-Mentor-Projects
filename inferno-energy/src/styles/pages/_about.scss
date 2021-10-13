@@ -1,0 +1,65 @@
+.quote {
+    min-height: 50vh;
+    display: grid;
+    place-items: center;
+    p {
+        max-width: 55ch;
+        font: 2.5rem Arial, sans-serif;
+        text-align: center;
+        font-weight: 600;
+        padding: 0 0.1em;
+    }
+    p::before  {
+        content: open-quote;
+    }
+    p::after {
+        content: close-quote;
+    }
+}
+
+.inferno-explained {
+    padding: 0 0 4em;
+    .information-card {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        img {
+            max-width: 300px;
+        }
+    }
+    .information-card1 {
+        flex-wrap: wrap;
+        padding-bottom: 1em;
+        p {
+            font: 1.5rem Arial, sans-serif;
+            max-width: 45ch;
+            padding: 0 0.1em;
+        }
+    }
+    .information-card2 {
+        flex-wrap: wrap-reverse;
+        padding-top: 1em;
+        table {
+            td {
+                font: 1.5rem Arial, sans-serif;
+                padding: 0 0.1em;
+            }
+        }
+    }
+}
+
+@media (max-width: 640px) {
+    .information-card1 {
+        p {
+            text-align: center;
+        }
+    }
+    .information-card2 {
+        table {
+            td {
+                text-align: center;
+            }
+        }
+    }
+}

@@ -1,0 +1,22 @@
+main {
+    h1 {
+        font: 2.5rem Arial, sans-serif;
+        font-weight: bold;
+        text-align: center;
+        line-height: 2em;
+    }
+    .information-inferno {
+        margin-top: 2em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        text-align: center;
+        img {
+            max-width: 25%;
+        }
+        p {
+            font: 1.5rem Arial, sans-serif;
+        }
+    }
+}

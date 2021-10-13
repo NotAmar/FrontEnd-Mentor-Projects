@@ -1,0 +1,112 @@
+//styles
+.nav {
+    background-color: $color-prime-30;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    .flexCon-nav {
+        padding: 0.5em 2em;
+        .nav-desktop {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .logoCon {
+                .logo-inferno {
+                    max-width: 150px;
+                }
+            }
+            .links-desktop {
+                display: none;
+                align-items: center;
+                gap: 0.3em;
+                .links {
+                    padding: 0.25em 1.25em;
+                    cursor: pointer;
+                    a {
+                        font: 1.25rem Arial, Helvetica, sans-serif;
+                        color: #fff;
+                    }
+                }
+            }
+            .hamBrg-con {
+                width: 50px;
+                height: 50px;
+                display: grid;
+                place-items: center;
+                cursor: pointer;
+                $heigt-slice: 6px;
+                transition: all 200ms ease-in;
+                .brg-slice {
+                    display: block;
+                    width: 100%;
+                    height: $heigt-slice;
+                    background-color: $color-prime-10;
+                    position: relative;
+                }
+                .brg-slice::before {
+                    content: "";
+                    position: absolute;
+                    top: -16px;
+                    left: 0;
+                    width: 100%;
+                    height: $heigt-slice;
+                    background-color: $color-prime-10;
+                }
+                .brg-slice::after {
+                    content: "";
+                    position: absolute;
+                    top: 16px;
+                    left: 0;
+                    width: 100%;
+                    height: $heigt-slice;
+                    background-color: $color-prime-10;
+                }
+            }
+        }
+        .links-mobile {
+            padding: 1em;
+            align-items: center;
+            flex-direction: column;
+            gap: 2em;
+            position: sticky;
+            top: 0;
+            // background-color: $color-prime-30;
+            li {
+                padding: 0.5em 1.25em;
+                cursor: pointer;
+                width: 100%;
+                text-align: center;
+                a {
+                    font: 1.25rem Arial, Helvetica, sans-serif;
+                    color: #fff;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+//hover statements
+.links:hover {
+    background-color: $color-accent-30; 
+}
+//animation
+.links {
+    transition: background-color 100ms ease-in;
+}
+
+//querries
+@media (min-width: 700px) {
+    .nav {
+        .flexCon-nav {
+            .nav-desktop {
+                .links-desktop {
+                    display: flex;
+                }
+                .hamBrg-con {
+                    display: none;
+                }
+            }
+        }
+    }
+}

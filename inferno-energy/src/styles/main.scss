@@ -1,0 +1,15 @@
+@import 'base/reset';
+@import 'base/wrapper';
+
+@import 'util/variables';
+
+@import 'layout/nav';
+@import 'layout/header';
+@import 'layout/footer';
+
+@import 'components/shopBtn';
+@import 'components/info-inferno';
+
+@import 'pages/index';
+@import 'pages/about';
+@import 'pages/contact';

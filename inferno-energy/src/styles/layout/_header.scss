@@ -1,0 +1,31 @@
+.header-index {
+    background-color: $color-accent-30;
+    display: flex;
+    justify-content: center;
+    a {
+        width: 100%;
+        img {
+            width: inherit;
+        }
+    }
+}
+
+.header-about {
+    min-height: 50vh;
+    width: 100%;
+    background:  $color-prime-30 url(../assets/product-foto.png) no-repeat;
+    background-attachment: fixed;
+    background-position-y: 20%;
+    background-size: cover;
+    background-blend-mode: multiply;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    h1 {
+        font-family: Arial, sans-serif;
+        font-size: 3.5rem;
+        font-weight: bold;
+        text-align: center;
+        color: $color-prime-60;
+    }
+}

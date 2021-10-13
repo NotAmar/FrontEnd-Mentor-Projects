@@ -1,0 +1,37 @@
+.main {
+    padding: 2em 0;
+    min-height: 50vh;
+    h1 {
+        padding: 0.75em 0;
+        font: 2.5rem Arial, sans-serif;
+        text-align: center;
+        font-weight: 700;
+    }
+    .container-main {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 0 0.5em;
+        gap: 1em;
+        .product {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            img {
+                width: 250px;
+                height: 250px;
+            }
+            h3 {
+                font: 1.5rem Arial, sans-serif;
+                padding: 0.5em 0;
+            }
+        }
+    }
+}
+
+.section {
+    img {
+        width: 100%;
+    }
+}

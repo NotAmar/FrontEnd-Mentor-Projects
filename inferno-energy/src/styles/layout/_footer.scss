@@ -1,0 +1,59 @@
+.footer {
+    background-color: $color-prime-30;
+    .flex-con-footer {
+        padding: 2.5em 0.5em;
+        display: flex;
+        flex-shrink: 0;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        color: $color-prime-60;
+        font: 1rem Arial, sans-serif;
+        .info {
+            img {
+                width: 150px;
+            }
+        }
+        .email-form {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 1em 0.5em;
+            label {
+                font: 1.25rem Arial, sans-serif;
+                font-weight: bold;
+                padding: 0 0.2em 0.2em 0;
+            }
+            .con-input {
+                background-color: $color-prime-60;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                flex-shrink: 0;
+                .submit-btn {
+                    background-color: $color-accent-60;
+                    border: none;
+                    padding: 0.25em 0.75em;
+                    font: 1em Arial, sans-serif;
+                    color: $color-accent-30;
+                }
+                .email-input {
+                    background-color: $color-prime-60;
+                    border: none;
+                }
+            }
+        }
+        .nav-footer {
+            li {
+                color: $color-prime-60;
+                padding: 0.25em 0.5em;
+                text-align: center;
+                a {
+                    color: inherit;
+                }
+            }
+        }
+    }
+}
